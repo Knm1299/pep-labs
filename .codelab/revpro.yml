@@ -1,10 +1,10 @@
 ---
 :lab_name: pep-labs
-:repo_path: "/workspace/revpro-cli/pep-labs.git"
+:repo_path: "/workspace/revpro-cli/pep-labs"
 :previous_lab: 
 :current_lab: 
 :origin_remote: https://github.com/Knm1299/pep-labs.git
-:repo_clone_folder: "/workspace/revpro-cli/pep-labs.git"
+:repo_clone_folder: "/workspace/revpro-cli/pep-labs"
 :github_username: Knm1299
 :git_name: Keven N Mitchell
 :git_email: keven.mitchell@revature.com
@@ -33,8 +33,8 @@
     checkoutLocation: pep-gitpod-workspace
     upstreamRemoteURI: https://github.com/revature-curriculum/pep-gitpod-workspace.git
   :gitpod_workspace:
-    :workspace_id: knm1299-pepgitpodworksp-8vlpoaw0qmw
-    :workspace_url: https://knm1299-pepgitpodworksp-8vlpoaw0qmw.ws-us79.gitpod.io
+    :workspace_id: knm1299-pepgitpodworksp-ifxb7jakhd3
+    :workspace_url: https://knm1299-pepgitpodworksp-ifxb7jakhd3.ws-us81.gitpod.io
     :repo_root: "/workspace/pep-gitpod-workspace"
     :git_user_email: keven.mitchell@revature.com
     :git_user_name: Keven N Mitchell
