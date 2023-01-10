@@ -10,6 +10,11 @@ public class LargestSum {
      * @return the largest possible sum of separate numbers from nums.
      */
     public int bigSum(List<Integer> nums){
+        int max = nums.get(0);
+        int second = nums.get(1);
+        for(int i : nums){
+            if()
+        }
         return 0;
     }
 }
