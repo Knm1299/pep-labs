@@ -13,8 +13,13 @@ public class LargestSum {
         int max = nums.get(0);
         int second = nums.get(1);
         for(int i : nums){
-            if()
+            if(i > max){
+                second = max;
+                max = i;
+            }else if(i > second){
+                second = i;
+            }
         }
-        return 0;
+        return second + max;
     }
 }
