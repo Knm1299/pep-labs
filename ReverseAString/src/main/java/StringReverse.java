@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class StringReverse {
     /**
      * Task: return the reverse of a string.
@@ -13,6 +13,8 @@ public class StringReverse {
      * @return the reverse of str.
      */
     public String reverse(String str){
-        return null;
+        String out = "";
+        for(int i=0; i<str.length(); i++)out = out + str.charAt(str.length() - i - 1);
+        return out;
     }
 }
