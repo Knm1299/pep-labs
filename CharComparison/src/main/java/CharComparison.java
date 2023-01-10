@@ -11,6 +11,16 @@ public class CharComparison {
      * @return -1 if A is less than B, 1 if A is greater than B, and 0 if the two arrays are identical.
      */
     public int compare(char[] a, char[] b){
-        return 0;
+        int sumA = sumArr(a);
+        int sumB = sumArr(b);
+        return (sumA > sumB)? 1 : (sumB > sumA)? -1 : 0;
+    }
+
+    public int sumArr(char[] in){
+        int total = 0;
+        for(char c : in){
+            total += c;
+        }
+        return total;
     }
 }
