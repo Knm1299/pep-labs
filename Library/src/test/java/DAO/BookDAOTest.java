@@ -49,7 +49,7 @@ public class BookDAOTest {
      */
     @Test
     public void getBookByIsbnTest(){
-        Book b1 = new Book(100, 0, "ficciones", 2);
+        Book b1 = new Book(100, 1, "ficciones", 2);
         Book book = bookDAO.getBookByIsbn(100);
         Assert.assertEquals(b1, book);
     }
@@ -79,11 +79,11 @@ public class BookDAOTest {
      */
     @Test
     public void getBooksWithBookCountOverZeroTest(){
-        Book b0 = new Book(100, 0, "ficciones", 2);
-        Book b1 = new Book(102, 1, "mr palomar", 1);
-        Book b2 = new Book(103, 1, "invisible cities", 3);
-        Book b3 = new Book(106, 3, "understanding media", 1);
-        Book b4 = new Book(107, 4, "critique of pure reason", 7);
+        Book b0 = new Book(100, 1, "ficciones", 2);
+        Book b1 = new Book(102, 2, "mr palomar", 1);
+        Book b2 = new Book(103, 2, "invisible cities", 3);
+        Book b3 = new Book(106, 4, "understanding media", 1);
+        Book b4 = new Book(107, 5, "critique of pure reason", 7);
         List<Book> availableBooks = bookDAO.getBooksWithBookCountOverZero();
         Assert.assertTrue(availableBooks.contains(b0));
         Assert.assertTrue(availableBooks.contains(b1));
