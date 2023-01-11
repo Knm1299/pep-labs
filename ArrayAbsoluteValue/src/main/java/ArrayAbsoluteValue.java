@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class ArrayAbsoluteValue {
     /**
@@ -9,6 +11,6 @@ public class ArrayAbsoluteValue {
      * @return the absolute value array of nums.
      */
     public int[] getArrayAbs(int[] nums){
-        return null;
+        return Arrays.stream(nums).map((i)->((i>0)?i:-i)).toArray();
     }
 }
