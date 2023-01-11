@@ -1,3 +1,4 @@
+import java.util.HashSet;
 
 public class IsThereSum {
     /**
@@ -10,6 +11,11 @@ public class IsThereSum {
      * @return true if two separate values in the array add up to a target, false otherwise.
      */
     public boolean check(int[] arr, int target){
+        for(int i=0; i<arr.length; i++){
+            for(int j = 0; j<arr.length;j++){
+                if(j!=i && (arr[i]+arr[j])==target)return true;
+            }
+        }
         return false;
     }
 }
